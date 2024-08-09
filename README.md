@@ -11,8 +11,6 @@ The WebSocket server listens for incoming audio streams, saves the data as a WAV
 Before running the WebSocket server, ensure you have the following installed:
 
 - <a href="https://nodejs.org/en/" target="_blank">node.js</a> (>= v20.12.0 required)
-- <a href="https://www.npmjs.com/package/ws" target="_blank">ws</a>
-- <a href="https://www.npmjs.com/package/wav" target="_blank">wav</a>
 
 ## Steps to Set Up
 
