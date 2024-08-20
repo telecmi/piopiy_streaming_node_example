@@ -96,3 +96,27 @@ To run the server:
 ```sh
 node websocket.js
 ```
+
+### 5. Exposing the WebSocket Server using ngrok
+
+To expose your local WebSocket server to the internet, use ngrok to create a public TCP URL:
+
+1.Start ngrok on port 8080 with the following command:
+
+```sh
+ngrok tcp 8080
+```
+
+2.Copy the ngrok TCP URL, which will look something like **tcp://0.tcp.ngrok.io**
+
+### 6. Using the ngrok TCP URL
+
+Once you have the ngrok TCP URL, you can use it in your Piopiy configuration to stream voice data. For example:
+
+```sh
+ws://0.tcp.ngrok.io:xxxxx
+```
+
+### 7. Expected Call Flow
+
+When the code is executed, the WebSocket server will handle incoming connections and stream the audio data from both the caller and callee, saving it as a WAV file on the server.
